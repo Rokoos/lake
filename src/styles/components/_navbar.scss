@@ -1,0 +1,69 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1900px;
+  padding: 0.75rem 2rem;
+  background: $offWhite;
+  z-index: 1;
+
+  .nav-center {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+
+      .header-title {
+        font-family: "Rock Salt", cursive;
+        text-decoration: none;
+        color: #777;
+        font-size: 0.5rem;
+        padding-top: 1rem;
+        transition: $mainTransition;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+
+    .nav-links {
+      text-decoration: none;
+      color: #777;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: $mainSpacing;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .nav-header {
+        .header-title {
+          font-size: 1.2rem;
+        }
+      }
+
+      .nav-links {
+        height: auto;
+        display: flex;
+        align-items: center;
+
+        a {
+          margin: 0 1rem;
+          padding: 0.5rem 0;
+        }
+      }
+    }
+  }
+}
