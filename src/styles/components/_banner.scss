@@ -1,0 +1,48 @@
+.banner {
+  display: inline-block;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.3);
+  color: $mainWhite;
+  padding: 2rem 5px;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: $mainSpacing;
+  border-radius: 10px;
+  animation: banner 4s;
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  @keyframes banner {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    width: 70%;
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    width: 560px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 2rem 2rem;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}
