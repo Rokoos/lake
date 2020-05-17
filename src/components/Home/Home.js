@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import Theme from "../Theme/Theme";
 import Banner from "../Banner/Banner";
 import Services from "../Services/Services";
+import RoomContainer from "../RoomContainer/RoomContainer";
 
 export default class Home extends Component {
   componentDidMount() {
@@ -30,6 +31,7 @@ export default class Home extends Component {
           </Banner>
         </Theme>
         <Services />
+        <RoomContainer />
       </Fragment>
     );
   }
