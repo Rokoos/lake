@@ -1,4 +1,9 @@
-import { FETCH_ROOMS, SET_LOADING } from "../actions/types";
+import {
+  FETCH_ROOMS,
+  SET_LOADING,
+  SET_PRICES,
+  SET_FILTERS,
+} from "../actions/types";
 
 const INITIAL_STATE = {
   rooms: [],
@@ -23,6 +28,18 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         loading: false,
+      };
+    case SET_PRICES:
+      return {
+        ...state,
+        price: action.maxPrice,
+        maxPrice: action.maxPrice,
+        minPrice: action.minPrice,
+      };
+    case SET_FILTERS:
+      return {
+        ...state,
+        [action.name]: action.value,
       };
     default:
       return state;
