@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Link } from "react-scroll";
 import Theme from "../Theme/Theme";
 import Banner from "../Banner/Banner";
+import Services from "../Services/Services";
 
 export default class Home extends Component {
   componentDidMount() {
@@ -28,6 +29,7 @@ export default class Home extends Component {
             </Link>
           </Banner>
         </Theme>
+        <Services />
       </Fragment>
     );
   }
