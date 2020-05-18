@@ -19,7 +19,7 @@ class RoomContainer extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-  rooms: state.rooms,
+  rooms: state.rooms.rooms,
   loading: state.rooms.loading,
 });
 export default connect(mapStateToProps, { startFetchRooms })(RoomContainer);
