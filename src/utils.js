@@ -5,3 +5,9 @@ export const getMaxPrice = (rooms) => {
 export const getMinPrice = (items) => {
   return Math.min(...items.map((item) => item.price));
 };
+
+export const getRoom = (rooms, slug) => {
+  let tempRooms = [...rooms];
+  const room = tempRooms.find((room) => room.slug === slug);
+  return room;
+};
